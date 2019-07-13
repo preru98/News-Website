@@ -1,29 +1,3 @@
-const URL='https://newsapi.org/v2/everything?q=bitcoin&from=2019-06-13&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
-returnNews();
-deleteDiv();
-
-async function returnNews(){
-    let iterator=0;
-    const response= await fetch(URL);
-    const data= await response.json();
-
-    // console.log(data);
-
-    const{articles}=data;
-    console.log(articles);
-
-    articles.forEach(function(newsRow){
-        // console.log(newsRow);
-        const{author,content}=newsRow;
-        console.log(iterator);
-        console.log(author);
-        console.log(content);
-        iterator++;
-        let newsDiv=new addDiv(content,author);
-        newsDiv.addNewRecord();
-    });
-}
-
 class addDiv{
     constructor(content,heading){
         this.content=content;
@@ -59,15 +33,16 @@ class addDiv{
 
     }
 }
-async function deleteDiv(){
-let responseFromReturnNews= await returnNews();
+
+let myDiv=new addDiv('I am a new Div created dynamically ussing javascript','Say Hello');
+myDiv.addNewRecord();
 var allButtons= document.querySelectorAll(".buttonOneImage");
 var allDivs= document.querySelectorAll(".divOne");
-alert(allButtons.length);
+
 for (let i = 0; i < allButtons.length; i++) {
     allButtons[i].addEventListener('click',function(){
         allDivs[i].parentNode.removeChild(allDivs[i]);
     });      //event listener ends here
 }            //for loop ends here
 
-}
+

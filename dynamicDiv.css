@@ -1,0 +1,91 @@
+
+        div{
+           /*  border:2px solid black; */
+        }
+        #mainDiv{
+            margin: 0%;
+            position: static;
+            /* height:100vh;
+            width:100%; */
+
+        }
+        .divOne{
+            position: relative;
+            /* top:4%; */
+            left:0%;
+            /* height:20vh; */
+            width:inherit;
+            color: #3c763d;
+            background-color: #c4e6b6;
+            padding: 15px;
+            border: 4px solid #b6ee88;
+        }
+        /* #divTwo{
+            position: relative;
+            top:20%; 
+            left:0%;
+            height:20vh;
+            width:inherit;
+            color: #3c763d;
+            background-color: #c4e6b6;
+            padding: 15px;
+            border: 4px solid #b6ee88;
+        } */
+        /* #divThree{
+            position: relative;
+             top:40%; 
+            left:0%;
+            height:20vh;
+            width:inherit;
+            color: #3c763d;
+            background-color: #c4e6b6;
+            padding: 15px;
+            border: 4px solid #b6ee88;
+        } */
+        .buttonOne{
+            position:relative;
+            top:1%;
+            left:0%;
+            height:4vh;
+            width:inherit;
+        }
+        /* #buttonTwo{
+            position:relative;
+            top:1%;
+            left:0%;
+            height:4vh;
+            width:inherit;
+        }
+        #buttonThree{
+            position:relative;
+            top:1%;
+            left:0%;
+            height:4vh;
+            width:inherit;
+        } */
+        .buttonOneImage{
+            position: relative;
+            top:0%;
+            left:97.5%;
+            cursor:pointer;
+            height:4vh;
+
+        }
+        /* #buttonThreeImage{
+            position: relative;
+            top:0%;
+            left:97.5%;
+            cursor:pointer;
+
+        }
+        #buttonTwoImage{
+            position: relative;
+            top:0%;
+            left:97.5%;
+            cursor:pointer;
+
+        } */
+        .paraOne{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 13pt;
+        }
