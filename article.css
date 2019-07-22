@@ -13,15 +13,21 @@ div{
     position: absolute;
     top:37%;
     left:10%;
+    width: 80%;
+    right:10%;
 }
 .articleContainer{
     position: relative;
     left:0%;
+    width:100%;
+    border: 3px solid orange;
 }
 .crossButtonContainer{
-position: relative;
-left:0%;
-top:0%;
+    position: relative;
+    left:0%;
+    top:0%;
+    border: 3px solid blueviolet;
+
 }
 .crossButton{
     height:20px;
@@ -30,11 +36,24 @@ top:0%;
     left:75%;
 }
 .newsContainer{
-float: left;
+    float: left;
+    position: relative;
+    left:0%;
+    width: 80%;
+    border: 1px solid palevioletred;
+
 } 
 .newsImageContainer{
-float: right;
+    float: right;
+    top: 0%;
+    left: 10%;
+    border: 1px solid black;
+    position: relative;
+    width: 20%;
 }
 .newsImage{
-    height:200px;
+    height: 100px;
+    top:0%;
+    left:0%;
+    position: relative;
 }
