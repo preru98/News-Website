@@ -1,0 +1,40 @@
+body{
+    margin:0;
+}
+#searchSection{
+position: absolute;
+left:40%;
+top:25%;
+}
+div{
+    border:1px solid gray;
+}
+#mainDiv{
+    position: absolute;
+    top:37%;
+    left:10%;
+}
+.articleContainer{
+    position: relative;
+    left:0%;
+}
+.crossButtonContainer{
+position: relative;
+left:0%;
+top:0%;
+}
+.crossButton{
+    height:20px;
+    position: relative;
+    top:0%;
+    left:75%;
+}
+.newsContainer{
+float: left;
+} 
+.newsImageContainer{
+float: right;
+}
+.newsImage{
+    height:200px;
+}
