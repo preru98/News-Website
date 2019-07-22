@@ -15,12 +15,15 @@ div{
     left:10%;
     width: 80%;
     right:10%;
+    height:auto;
 }
 .articleContainer{
     position: relative;
     left:0%;
     width:100%;
     border: 3px solid orange;
+    height: auto;
+    overflow: auto;
 }
 .crossButtonContainer{
     position: relative;
@@ -36,24 +39,36 @@ div{
     left:75%;
 }
 .newsContainer{
-    float: left;
+    /* float: left; */
     position: relative;
     left:0%;
     width: 80%;
     border: 1px solid palevioletred;
+    height: auto;
+    overflow: auto;
+
 
 } 
 .newsImageContainer{
-    float: right;
+    /* float: right; */
     top: 0%;
-    left: 10%;
+    right: 0%;
     border: 1px solid black;
-    position: relative;
+    position: absolute;
     width: 20%;
+    height: auto;
+    overflow: auto;
 }
 .newsImage{
     height: 100px;
     top:0%;
     left:0%;
     position: relative;
+}
+.mainSection{
+position:relative;
+top:0%;
+left:0%;
+overflow: auto;
+height: auto;
 }
