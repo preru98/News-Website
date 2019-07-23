@@ -1,6 +1,5 @@
 const urlPart1='//newsapi.org/v2/everything?q=';
 const urlPart2='&from=2019-06-23&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
-
 let buttonVar=document.getElementById('submit');
 buttonVar.addEventListener('click',function(){
     getKeyword();
@@ -10,10 +9,8 @@ function getKeyword(){
     alert(getText.value);
     URL=urlPart1+getText.value+urlPart2;
     console.log(URL);
+    returnNews();
 }
-// returnNews();
-// deleteDiv();
-
 async function returnNews(){
     console.log(URL);
     // let Variable=await getKeyword();
@@ -59,7 +56,7 @@ class addDiv{
         let newNewsImageContainer=document.createElement("div");
         
         newCrossButton.src="x-mark-icon-21.jpg";
-        // newCrossButton.height='100%';
+        newCrossButton.height='100%';
 
         makeBold.appendChild(newHeading);
         newNews.appendChild(makeBold);
@@ -76,31 +73,13 @@ class addDiv{
         let mainDivVar=document.querySelector('#mainDiv');
         mainDivVar.appendChild(newArticleContainer);
 
-        newCrossButton.classList.add('buttonOneImage');
-        newContainerDiv.classList.add('divOne'); 
-        newImageDiv.classList.add('buttonOne');
-
-        newArticleContainer.classList.add(articleContainer);
-        newCrossButtonContainer.classList.add(crossButtonContainer);
-        newCrossButton.classList.add(crossButton);
-        newMainSection.classList.add(mainSection);
-        newNewsContainer.classList.add(newsContainer);
-        newNews.classList.add(news);
-        newNewsImageContainer.classList.add(newsImageContainer);
-        newNewsImage.classList.add(newsImage);
+        newArticleContainer.classList.add('articleContainer');
+        newCrossButtonContainer.classList.add('crossButtonContainer');
+        newCrossButton.classList.add('crossButton');
+        newMainSection.classList.add('mainSection');
+        newNewsContainer.classList.add('newsContainer');
+        newNews.classList.add('news');
+        newNewsImageContainer.classList.add('newsImageContainer');
+        newNewsImage.classList.add('newsImage');
     }
 }
-// async function deleteDiv(){
-// let responseFromReturnNews= await returnNews();
-// var allButtons= document.querySelectorAll(".buttonOneImage");
-// var allDivs= document.querySelectorAll(".divOne");
-// alert(allButtons.length);
-// for (let i = 0; i < allButtons.length; i++) {
-//     allButtons[i].addEventListener('click',function(){
-//         allDivs[i].parentNode.removeChild(allDivs[i]);
-//     });      //event listener ends here
-// }            //for loop ends here
-
-// }
-
-
