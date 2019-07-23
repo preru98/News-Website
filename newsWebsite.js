@@ -27,20 +27,21 @@ async function returnNews(){
 
     articles.forEach(function(newsRow){
         // console.log(newsRow);
-        const{author,content}=newsRow;
+        const{author,content,urlToImage}=newsRow;
         console.log(iterator);
         console.log(author);
         console.log(content);
         iterator++;
-        let newsDiv=new addDiv(content,author);
+        let newsDiv=new addDiv(content,author,urlToImage);
         newsDiv.addNewRecord();
     });
 }
 
 class addDiv{
-    constructor(content,heading){
+    constructor(content,heading,urlToImage){
         this.content=content;
         this.heading=heading;
+        this.urlToImage=urlToImage;
     }
     addNewRecord(){
         let newArticleContainer=document.createElement("div");
@@ -58,6 +59,9 @@ class addDiv{
         
         newCrossButton.src="x-mark-icon-21.jpg";
         newCrossButton.height='100%';
+        // newNewsImage.style.backgroundImage="url(this.urlToImage)";
+        newNewsImage.src=this.urlToImage;
+       
 
         makeBold.appendChild(newHeading);
         newNews.appendChild(makeBold);

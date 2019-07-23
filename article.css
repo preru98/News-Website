@@ -48,7 +48,7 @@ body {
 }
 .newsImageContainer {
     top: 0%;
-    background-image: url('https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg');
+    /* background-image: url('https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg'); */
     background-clip: padding-box;
     background-position: center;
     background-size: 100% auto;
