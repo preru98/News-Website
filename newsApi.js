@@ -70,9 +70,9 @@ async function deleteDiv(){
     var allDivs= document.querySelectorAll(".divOne");
     alert(allButtons.length);
     for (let i = 0; i < allButtons.length; i++) {
-        allButtons[i].addEventListener('click',function(){
-            allDivs[i].parentNode.removeChild(allDivs[i]);
-        });      //event listener ends here
+            allButtons[i].addEventListener('click',function(){
+                allDivs[i].parentNode.removeChild(allDivs[i]);
+            });      //event listener ends here
     }            //for loop ends here
 
 }
