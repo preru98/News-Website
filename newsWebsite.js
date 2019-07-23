@@ -10,6 +10,7 @@ function getKeyword(){
     URL=urlPart1+getText.value+urlPart2;
     console.log(URL);
     returnNews();
+    deleteDiv();
 }
 async function returnNews(){
     console.log(URL);
@@ -82,4 +83,16 @@ class addDiv{
         newNewsImageContainer.classList.add('newsImageContainer');
         newNewsImage.classList.add('newsImage');
     }
+}
+async function deleteDiv(){
+    let responseFromReturnNews= await returnNews();
+    var allButtons= document.querySelectorAll(".crossButton");
+    var allDivs= document.querySelectorAll(".articleContainer");
+    alert(allButtons.length);
+    for (let i = 0; i < allButtons.length; i++) {
+            allButtons[i].addEventListener('click',function(){
+                allDivs[i].parentNode.removeChild(allDivs[i]);
+            });      //event listener ends here
+    }            //for loop ends here
+
 }

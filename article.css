@@ -6,9 +6,9 @@ body {
     left: 40%;
     top: 25%;
 }
-div {
-    border: 1px solid gray;
-}
+/* div {
+    border: 1px solid gray; 
+} */
 #mainDiv {
     position: absolute;
     top: 37%;
@@ -21,7 +21,7 @@ div {
     position: relative;
     left: 0%;
     width: 100%;
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     height: auto;
     overflow: auto;
 }
@@ -29,19 +29,20 @@ div {
     position: relative;
     left: 0%;
     top: 0%;
-    border: 3px solid blueviolet;
+    /* border: 3px solid blueviolet; */
 }
 .crossButton {
     height: 20px;
     position: relative;
     top: 0%;
     left: 98%;
+    cursor: pointer;
 }
 .newsContainer {
     position: relative;
     left: 0%;
     width: 79%;
-    border: 1px solid palevioletred;
+    /* border: 1px solid palevioletred; */
     display: inline-block;
     overflow: auto;
 }
@@ -53,7 +54,7 @@ div {
     background-size: 100% auto;
     background-repeat: no-repeat;
     right: 0%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: relative;
     height: 20vh;
     float: right;
