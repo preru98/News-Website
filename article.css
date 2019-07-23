@@ -1,74 +1,74 @@
-body{
-    margin:0;
+body {
+    margin: 0;
 }
-#searchSection{
-position: absolute;
-left:40%;
-top:25%;
-}
-div{
-    border:1px solid gray;
-}
-#mainDiv{
+#searchSection {
     position: absolute;
-    top:37%;
-    left:10%;
-    width: 80%;
-    right:10%;
-    height:auto;
+    left: 40%;
+    top: 25%;
 }
-.articleContainer{
+div {
+    border: 1px solid gray;
+}
+#mainDiv {
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    width: 80%;
+    right: 10%;
+    height: auto;
+}
+.articleContainer {
     position: relative;
-    left:0%;
-    width:100%;
+    left: 0%;
+    width: 100%;
     border: 3px solid orange;
     height: auto;
     overflow: auto;
 }
-.crossButtonContainer{
+.crossButtonContainer {
     position: relative;
-    left:0%;
-    top:0%;
-    border: 3px solid blueviolet;
-
-}
-.crossButton{
-    height:20px;
-    position: relative;
-    top:0%;
-    left:75%;
-}
-.newsContainer{
-    /* float: left; */
-    position: relative;
-    left:0%;
-    width: 80%;
-    border: 1px solid palevioletred;
-    height: auto;
-    overflow: auto;
-
-
-} 
-.newsImageContainer{
-    /* float: right; */
+    left: 0%;
     top: 0%;
+    border: 3px solid blueviolet;
+}
+.crossButton {
+    height: 20px;
+    position: relative;
+    top: 0%;
+    left: 98%;
+}
+.newsContainer {
+    position: relative;
+    left: 0%;
+    width: 79%;
+    border: 1px solid palevioletred;
+    display: inline-block;
+    overflow: auto;
+}
+.newsImageContainer {
+    top: 0%;
+    background-image: url('https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg');
+    background-clip: padding-box;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     right: 0%;
     border: 1px solid black;
-    position: absolute;
+    position: relative;
+    height: 20vh;
+    float: right;
     width: 20%;
-    height: auto;
-    overflow: auto;
 }
-.newsImage{
+.newsImage {
     height: 100px;
-    top:0%;
-    left:0%;
+    top: 0%;
+    left: 0%;
     position: relative;
 }
-.mainSection{
-position:relative;
-top:0%;
-left:0%;
-overflow: auto;
-height: auto;
+.mainSection {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    overflow: auto;
+    height: auto;
 }
