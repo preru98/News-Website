@@ -21,7 +21,7 @@ body {
     position: relative;
     left: 0%;
     width: 100%;
-    /* border: 3px solid orange; */
+    border: 1px solid orange;
     height: auto;
     overflow: auto;
 }
