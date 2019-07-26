@@ -1,5 +1,5 @@
 var allDivs= document.querySelectorAll(".articleContainer");
-for (let i = 0; i < allButtons.length; i++)
+for (let i = 0; i < allDivs.length; i++)
 {
         allDivs[i].parentNode.removeChild(allDivs[i]);
     }; 
