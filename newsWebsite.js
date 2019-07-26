@@ -32,8 +32,7 @@ async function returnNews(){
         console.log(author);
         console.log(content);
         iterator++;
-        let maineNews=content.toString();
-        let newsDiv=new addDiv(maineNews,author,urlToImage);
+        let newsDiv=new addDiv(content,author,urlToImage);
         newsDiv.addNewRecord();
     });
 }
