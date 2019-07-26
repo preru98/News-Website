@@ -1,3 +1,8 @@
+var allDivs= document.querySelectorAll(".articleContainer");
+for (let i = 0; i < allButtons.length; i++)
+{
+        allDivs[i].parentNode.removeChild(allDivs[i]);
+    }; 
 const urlPart1='https://newsapi.org/v2/everything?q=';
 const urlPart2='&from=2019-06-25&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
 let buttonVar=document.getElementById('submit');
