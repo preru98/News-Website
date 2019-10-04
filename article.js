@@ -1,5 +1,5 @@
 const urlPart1='//newsapi.org/v2/everything?q=';
-const urlPart2='&from=2019-06-23&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
+const urlPart2='&from=2019-09-04&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
 
 let buttonVar=document.getElementById('submit');
 buttonVar.addEventListener('click',function(){

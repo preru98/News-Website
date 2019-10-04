@@ -1,6 +1,6 @@
 const keyword=prompt('Enter Keyword');
 let urlPart1='https://newsapi.org/v2/everything?q=';
-let urlPart2='&from=2019-06-23&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
+let urlPart2='&from=2019-09-04&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
 console.log(keyword);
 const URL=urlPart1+keyword+urlPart2;
 // const URL='https://newsapi.org/v2/everything?q=Trump&from=2019-06-13&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
