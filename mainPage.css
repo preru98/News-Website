@@ -129,7 +129,7 @@ body{
 }
 .buttonCentre:hover{
     opacity: 1;
-    background-color:	#813268;
+    background-color:	rgb(10, 10, 10);
     transition: all 3s;
     box-shadow:  2px 2PX 10px #706767;
     border :1px solid black;
