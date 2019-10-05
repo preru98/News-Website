@@ -4,7 +4,7 @@ for (let i = 0; i < allDivs.length; i++)
         allDivs[i].parentNode.removeChild(allDivs[i]);
     }; 
 const urlPart1='https://newsapi.org/v2/everything?q=';
-const urlPart2='&from=2019-09-04&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
+const urlPart2='&from=2019-09-05&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
 let buttonVar=document.getElementById('submit');
 buttonVar.addEventListener('click',function(){
     getKeyword();
@@ -14,7 +14,7 @@ function getKeyword(){
     for (let i = 0; i < allDivs.length; i++){
         allDivs[i].parentNode.removeChild(allDivs[i]); }; 
     let getText=document.getElementById('search');
-    alert(getText.value);
+    // alert(getText.value);
     URL=urlPart1+getText.value+urlPart2;
     console.log(URL);
     returnNews();
@@ -100,7 +100,7 @@ async function deleteDiv(){
     let responseFromReturnNews= await returnNews();
     var allButtons= document.querySelectorAll(".crossButton");
     var allDivs= document.querySelectorAll(".articleContainer");
-    alert(allButtons.length);
+    // alert(allButtons.length);
     for (let i = 0; i < allButtons.length; i++) {
             allButtons[i].addEventListener('click',function(){
                 allDivs[i].parentNode.removeChild(allDivs[i]);
