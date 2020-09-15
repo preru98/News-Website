@@ -81,6 +81,7 @@ class addDiv{
     addNewRecord(){
         let newsArticleContainerAnchor = document.createElement('a');
         newsArticleContainerAnchor.setAttribute('href', this.url);
+        newsArticleContainerAnchor.setAttribute('target', '_blank');
         let newArticleContainer=document.createElement("div");
         let newCrossButtonContainer=document.createElement("div");
         let newMainSection=document.createElement("div");
