@@ -59,29 +59,28 @@ async function returnNews(){
     // })
 
     // console.log(data);
+    // console.log(articles);
 
-    const{articles}=data;
-    console.log(articles);
+    const {articles} = data;
 
     articles.forEach(function(newsRow){
-        // console.log(newsRow);
-        const{author,content,urlToImage}=newsRow;
-        console.log(iterator);
-        console.log(author);
-        console.log(content);
+        const{author,content,urlToImage,url}=newsRow;
         iterator++;
-        let newsDiv=new addDiv(content,author,urlToImage);
+        let newsDiv=new addDiv(content,author,urlToImage,url);
         newsDiv.addNewRecord();
     });
 }
 
 class addDiv{
-    constructor(content,heading,urlToImage){
+    constructor(content,heading,urlToImage,url){
         this.content=content;
         this.heading=heading;
         this.urlToImage=urlToImage;
+        this.url = url;
     }
     addNewRecord(){
+        let newsArticleContainerAnchor = document.createElement('a');
+        newsArticleContainerAnchor.setAttribute('href', this.url);
         let newArticleContainer=document.createElement("div");
         let newCrossButtonContainer=document.createElement("div");
         let newMainSection=document.createElement("div");
@@ -111,7 +110,8 @@ class addDiv{
         newMainSection.appendChild(newNewsImageContainer);
         newCrossButtonContainer.appendChild(newCrossButton);
         newArticleContainer.appendChild(newCrossButtonContainer);
-        newArticleContainer.appendChild(newMainSection);
+        newsArticleContainerAnchor.appendChild(newMainSection);
+        newArticleContainer.appendChild(newsArticleContainerAnchor);
        
         let mainDivVar=document.querySelector('#mainDiv');
         mainDivVar.appendChild(newArticleContainer);
