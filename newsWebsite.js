@@ -3,8 +3,8 @@ for (let i = 0; i < allDivs.length; i++)
 {
         allDivs[i].parentNode.removeChild(allDivs[i]);
     }; 
-const urlPart1='https://newsapi.org/v2/everything?q=';
-const urlPart2='&from=2020-08-11&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
+const urlPart1='http://newsapi.org/v2/everything?q=';
+const urlPart2='&sortBy=publishedAt&apiKey=9096f7519ec24e7d8ef475dffb1b3b61';
 // console.log('axios:', axios({}));
 
 let buttonVar=document.getElementById('submit');
@@ -22,31 +22,27 @@ function getKeyword(){
     returnNews();
     deleteDiv();
 }
+
 async function returnNews(){
     console.log(URL);
     // let Variable=await getKeyword();
     console.log("Value of key :"+URL);
     let iterator=0;
-    const response= await fetch(URL,{
-                                        method: 'GET',
-                                        // mode: 'no-cors',
-                                        // referrerPolicy: 'no-referrer-when-downgrade',
-                                        
-                                        headers : {
-                                         'Access-Control-Allow-Origin': '*',
-                                        //  Accept: 'application/json',
-                                        } 
-                                        
-                                    });
+    const response = await fetch(
+        URL,
+        {
+            method: 'GET',
+            // mode: 'no-cors',
+            
+            // headers : {
+            //     'Access-Control-Allow-Origin': '*',
+            // //  Accept: 'application/json',
+            // } 
+        },
+    );
     console.log(response);
-    // const data= await response.json();
-    response.text()
-    .then((res) => {
-        console.log(res);
-    })
-    .catch( (err) => {
-        console.log(err);
-    })
+    const data= await response.json();
+    console.log(data)
 
     // axios({
     //     method : 'get',
@@ -64,19 +60,19 @@ async function returnNews(){
 
     // console.log(data);
 
-    // const{articles}=data;
-    // console.log(articles);
+    const{articles}=data;
+    console.log(articles);
 
-    // articles.forEach(function(newsRow){
-    //     // console.log(newsRow);
-    //     const{author,content,urlToImage}=newsRow;
-    //     console.log(iterator);
-    //     console.log(author);
-    //     console.log(content);
-    //     iterator++;
-    //     let newsDiv=new addDiv(content,author,urlToImage);
-    //     newsDiv.addNewRecord();
-    // });
+    articles.forEach(function(newsRow){
+        // console.log(newsRow);
+        const{author,content,urlToImage}=newsRow;
+        console.log(iterator);
+        console.log(author);
+        console.log(content);
+        iterator++;
+        let newsDiv=new addDiv(content,author,urlToImage);
+        newsDiv.addNewRecord();
+    });
 }
 
 class addDiv{

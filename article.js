@@ -15,28 +15,28 @@ function getKeyword(){
 // deleteDiv();
 
 async function returnNews(){
-    console.log(URL);
-    // let Variable=await getKeyword();
-    console.log("Valueof key :"+URL);
-    let iterator=0;
-    const response= await fetch(URL);
-    const data= await response.json();
+    // console.log(URL);
+    // // let Variable=await getKeyword();
+    // console.log("Valueof key :"+URL);
+    // let iterator=0;
+    // const response= await fetch(URL);
+    // const data= await response.json();
 
     // console.log(data);
 
-    const{articles}=data;
-    console.log(articles);
+    // const{articles}=data;
+    // console.log(articles);
 
-    articles.forEach(function(newsRow){
-        // console.log(newsRow);
-        const{author,content}=newsRow;
-        console.log(iterator);
-        console.log(author);
-        console.log(content);
-        iterator++;
-        let newsDiv=new addDiv(content,author);
-        newsDiv.addNewRecord();
-    });
+    // articles.forEach(function(newsRow){
+    //     // console.log(newsRow);
+    //     const{author,content}=newsRow;
+    //     console.log(iterator);
+    //     console.log(author);
+    //     console.log(content);
+    //     iterator++;
+    //     let newsDiv=new addDiv(content,author);
+    //     newsDiv.addNewRecord();
+    // });
 }
 
 class addDiv{
